@@ -3,38 +3,44 @@ import { FormEventHandler, useState } from "react";
 
 import { Footer } from "./Footer";
 
-function fiboString(number: string): string {
-  return [...fibonacciSequence(Number.parseInt(number, 10))].join(", ") + ".";
-}
-
 export function App() {
-  const [fibonacciSequenceNumber, setFibonacciSequence] = useState(
-    fiboString("1"),
-  );
+  const [fibonacciSequenceNumber, setFibonacciSequence] = useState(16);
 
   const onNumericInput: FormEventHandler<HTMLInputElement> = ({
     currentTarget: { value },
   }) => {
-    setFibonacciSequence(fiboString(value));
+    setFibonacciSequence(Number.parseInt(value));
   };
 
   return (
     <main className="bg-slate-600 flex flex-col p-5 gap-4 text-2xl text-center min-h-screen">
-      <h1 className="capitalize">Fibonacci Sequence</h1>
+      <h1 className="capitalize text-3xl underline">Fibonacci Sequence</h1>
 
-      <section>
-        <label className="bg-gray-500 rounded rounded-r-none p-2">
-          Number 👉🏼
-          <input
-            type="number"
-            onInput={onNumericInput}
-            className="rounded rounded-l-none focus:outline-none p-1"
-          />
-        </label>
-      </section>
+      <label className="bg-gray-500 rounded rounded-r-none p-2 m-15">
+        Number 👉🏼
+        <input
+          type="number"
+          onInput={onNumericInput}
+          value={fibonacciSequenceNumber}
+          className="rounded rounded-l-none focus:outline-none p-1"
+        />
+      </label>
 
       <section className="bg-blue-200 p-10 m-10">
-        <p>{fibonacciSequenceNumber}</p>
+        <ul className="grid lg:grid-cols-4 gap-4">
+          {[...fibonacciSequence(fibonacciSequenceNumber - 1)].map(
+            (value, index) => {
+              return (
+                <li
+                  key={index}
+                  className="text-purple-800 bg-blue-400 p-3 rounded"
+                >
+                  {index + 1}) <span className="text-sky-800">{value}</span>
+                </li>
+              );
+            },
+          )}
+        </ul>
       </section>
 
       <Footer />
