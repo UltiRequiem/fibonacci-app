@@ -9,7 +9,15 @@ export function App() {
   const onNumericInput: FormEventHandler<HTMLInputElement> = ({
     currentTarget: { value },
   }) => {
-    setFibonacciSequence(Number.parseInt(value));
+    const parsed = Number.parseInt(value, 10);
+
+    // my friends will be playing with this and will not even care if it shows infinity, sooo
+
+    // if (parsed > 1477) {
+    //   return alert("The maximum number is 1477.");
+    // }
+
+    setFibonacciSequence(parsed);
   };
 
   return (
