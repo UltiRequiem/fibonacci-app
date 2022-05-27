@@ -1,3 +1,3 @@
-export * from "./Fibonacci";
-export * from "./Footer";
-export * from "./NumberInput";
+export * from "./fibonacci";
+export * from "./footer";
+export * from "./numberInput";
