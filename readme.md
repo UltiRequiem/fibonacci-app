@@ -2,6 +2,16 @@
 
 Check the Fibonacci sequence directly in your browser 🚀
 
+## Deploy
+
+### Netlify 🚀
+
+https://fibonacci.ultirequiem.com
+
+### Cloudflare Workers 👷
+
+https://fibonacci.pages.dev
+
 ## Support
 
 Open an Issue, I will check it a soon as possible 👀

@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'preact/hooks';
 
-import {FibonacciList, Footer, Fibonacci, NumberInput} from './components';
+import {Fibonacci, FibonacciList, Footer, NumberInput} from './components';
 
 export function App() {
 	const [fibonacciSequenceNumber, setFibonacciSequence] = useState(16);
