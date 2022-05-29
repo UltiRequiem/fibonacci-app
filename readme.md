@@ -1,6 +1,16 @@
-# fibonacci.ultirequiem.com
+# Fibonacci Web App
 
 Check the Fibonacci sequence directly in your browser 🚀
+
+Made with [Preact](https://preactjs.com), [TailwindCSS](https://tailwindcss.com)
+and [The Fibonacci Module](https://github.com/UltiRequiem/fibonacci).
+
+I originally made this site for an school presentation,
+[Exposition Rehearsal Video](https://youtu.be/AaX5_RxVuwk).
+
+[Presentation Slides](https://docs.google.com/presentation/d/1T69v1QMr3Y2gd2jL32ReBSL_LnCeOUDdlW6jJyI9aro)
+
+> I'm from Perú, a South American country, so the video is in Spanish 😆
 
 ## Deploy
 
