@@ -10,7 +10,7 @@ I originally made this site for an school presentation,
 
 [Presentation Slides](https://docs.google.com/presentation/d/1T69v1QMr3Y2gd2jL32ReBSL_LnCeOUDdlW6jJyI9aro)
 
-> I'm from Perú, a South American country, so the video is in Spanish 😆
+> The video is in Spanish.
 
 ## Deploy
 
@@ -32,7 +32,7 @@ If you want to hurry me up a bit
 Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like
 my work 🙏
 
-Don't forget to start the repo ⭐
+Don't forget to star the repo ⭐
 
 ## Authors
 
